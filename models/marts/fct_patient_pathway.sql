@@ -14,6 +14,7 @@ SELECT
     s.admission_date,
     s.discharge_date,
     s.cost_euro,
+    s.icd10_code,
     -- Business Logic: Is this a readmission ?
     DATE_DIFF(
         s.admission_date,
