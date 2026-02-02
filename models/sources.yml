@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: healthcare_raw
+    database: france-healthcare-analytics
+    schema: healthcare_data
+    tables:
+      - name: patients
+      - name: hospital_stays
+      - name: hospitals
+      - name: pharmacy_claims
