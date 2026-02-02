@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: fct_patient_pathway
+    description: "Final Table for healthcare analytics and ML features"
+    columns:
+      - name: stay_id
+        tests:
+          - unique
+          - not_null
+
+      - name: patient_id
+        tests:
+          - not_null
+      
+      - name: cost_euro
+        tests:
+          - not_null
+          
+        
+       
